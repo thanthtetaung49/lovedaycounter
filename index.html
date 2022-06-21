@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Love Couple Calculator</title>
+
+    <!--    bootstrap css1 js1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!--    jqueryui css1 js1-->
+    <link rel="stylesheet" href="./libs/jquery-ui-1.13.1/jquery-ui.min.css" type="text/css"/>
+
+    <!--    fontawesome css1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+<!--    flatpickr css1 js1-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+
+</head>
+<body>
+
+<!--Start Header Section-->
+<header>
+    <div class="row">
+        <div class="text-light col-12 d-flex align-items-center p-3 mesages">
+            <span class="h1 fw-bold px-2">I</span>
+            <i class="fa-solid fa-heart fa-3x hearts"></i>
+            <span class="h1 fw-bold px-3">U</span>
+
+            <span class="intros">
+                Being with you is the strongest confession. Whether old or sick, i will be ready to be with you
+            </span>
+        </div>
+
+        <div class="p-photos">
+            <div class="col-sm-4 photos">
+                <img src="./img/photoone.webp" id="photo1" class="mx-auto" alt="mg's photo"/>
+                <h1 id="displayname" class="ms-3 text-center"></h1>
+                <h1 id="displaybirth" class="ms-3 text-center"></h1>
+            </div>
+            <div class="col-sm-4 d-flex align-items-center flex-column">
+                <h1 id="ourannidate" class="text-center"></h1>
+                <i class="fa-solid fa-heart fa-4x hearts"></i>
+                <h1 id="days" class="text-center">Love With</h1>
+                <p id="spendtogether" class="text-center"></p>
+            </div>
+            <div class="col-sm-4 photos">
+                <img src="./img/phototwo.webp" id="photo2" class="mx-auto" alt="may's photo"/>
+                <h1 id="displaylovername" class="ms-3 text-center"></h1>
+                <h1 id="displayloverbirth" class="ms-3 text-center"></h1>
+            </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center my-5">
+            <button class="btn btn-md bg-warning fw-bold rounded-pill filldatabtn" data-bs-toggle="modal" data-bs-target="#lovemodal">Fill your information
+            </button>
+        </div>
+    </div>
+</header>
+<!--End Header Section-->
+
+<!--Start A Few Message -->
+<div class="container love-letter">
+    <div class="row my-5">
+        <div class="text-center col-12 letter1">
+            <h1 class="fw-bold">A Few Message</h1>
+            <hr/>
+            <p>
+                Meeting you is the greatest fortune in my life. I just want to walk through mountains, cross rivers and see the world with you, and I only love you. I can't give you the whole world, but my world is here for you. Can I borrow your life?
+                You can borrow my life to talk and share the joys and sorrows together. Maybe no one will love you more than me. Years later, only I am willing to accompany you. I want my heart as well as yours, we will all join together, will live up to it.
+            </p>
+        </div>
+
+        <div class="text-center col-12 letter2">
+            <h1 class="fw-bold">Future</h1>
+            <hr/>
+            <p>
+                We have a long way to go in the future, where the road is and how we come from, we know nothing about it. It doesn't matter, because I believe that we will continue to be together, together to overcome all difficulties as always.
+                We will have laughter, tears, will remember, will forget, sometimes quarrel and disagree with each person's point of view, will also keep our own opinion. But most importantly, we will support each other and make progress together, stronger than ever. 　
+            </p>
+        </div>
+
+        <div class="text-center col-12 letter3">
+            <h1 class="fw-bold">Promise to you</h1>
+            <hr/>
+            <p>
+                Meeting you and loving you is destiny arranged for me.
+                This life is the harmony between the sky and the earth, I will protect you from the wind and rain, and you will sing the melody of love with you. I swear to love you unconditionally, cherish you, my heart is only you, only the two of us, only our family is the only one, and it won't change
+                Regardless of weather, ups and downs in life, weak or strong, I will go with you. Even if the earth stops spinning and the sun stops shining, I will belong to you.
+                Even though one day her steps were not stable, her black hair had turned silver and white, her beautiful face had hidden many wrinkles. I will still hold your hand, walk with you in the light of the sunset I promise to always be honest with you. Will never make me sad.
+                I promise to be the one to support you, love you, protect you and build a warm home with you, a home we can be proud of.
+            </p>
+        </div>
+    </div>
+</div>
+<!--Start A Few Message -->
+
+<!--Start footer section-->
+<footer>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-0c7804d3-030d-4b0d-9ca4-52853001686b"></div>,m
+</footer>
+<!--End footer section-->
+
+<!--Start Modal Section-->
+<section>
+    <div id="lovemodal" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered modal-sm modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="text-center fw-bold mb-2">Please fill your love information</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="mb-2">Enter your name</label>
+                            <label for="myname"></label><input type="text" name="myname" id="myname" class="form-control form-control-sm mb-2"
+                                                               placeholder="Enter your name"/>
+
+                            <label class="mb-2">Enter your lover name</label>
+                            <label for="lovername"></label><input type="text" name="name" id="lovername"
+                                                                  class="form-control form-control-sm mb-2"
+                                                                  placeholder="Enter your lover name"/>
+
+                            <label class="mb-2">Enter your birthday</label>
+                            <label for="mybirthday"></label><input type="date" name="mybirthday" id="mybirthday"
+                                                                   class="form-control form-control-sm mb-2 mydates"/>
+
+                            <label class="mb-2">Enter your lover birthday</label>
+                            <label for="loverbirthday"></label><input type="date" name="mybirthday" id="loverbirthday"
+                                                                      class="form-control form-control-sm mb-2 mydates"/>
+
+                            <label class="mb-2">Enter your anniversary date</label>
+                            <label for="annidate"></label><input type="date" name="annidate" id="annidate"
+                                                                 class="form-control form-control-sm mb-2 mydates"/>
+
+                            <button type="submit" id="submit" class="btn btn-sm bg-primary float-end text-white mt-2" data-bs-dismiss="modal">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Modal Section-->
+
+
+<!--bootstrap css1 js1-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+<!--jquery js1-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+<!--jqueryui css1 js1-->
+<script src="./libs/jquery-ui-1.13.1/jquery-ui.min.js" type="text/javascript"></script>
+
+<!--flatpickr css1 js1-->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        let myname = document.getElementById("myname");
+        let lovername = document.getElementById("lovername");
+        let getform = document.querySelector("form");
+        let mybirth = document.getElementById("mybirthday");
+        let loverbith = document.getElementById("loverbirthday");
+
+        getform.addEventListener("submit", function (e) {
+
+            function spendtogether() {
+                let annidate = document.getElementById("annidate");
+                let today = new Date();
+
+                let d1 = new Date(annidate.value);
+
+                let times = Math.abs(today - d1);
+                console.log(times);
+
+                let seconds = Math.floor(times / 1000);
+
+                let minutes = Math.floor(times / (1000 * 60));
+
+                let hours = Math.floor(times / (1000 * 60 * 60));
+
+                let days = Math.floor(times / (1000 * 60 * 60 * 24));
+
+                let months = Math.floor(times / (1000 * 60 * 60 * 24 * 31));
+
+                let years = Math.floor(times / (1000 * 60 * 60 * 24 * 31 * 12));
+
+
+                e.preventDefault();
+
+                document.getElementById("displayname").textContent = myname.value;
+                document.getElementById("displaylovername").textContent = lovername.value;
+
+                document.getElementById("displaybirth").textContent = mybirth.value;
+                document.getElementById("displayloverbirth").textContent = loverbith.value;
+
+                document.getElementById("ourannidate").textContent = `Date ${annidate.value}`;
+
+                document.getElementById("days").textContent = `Days ${days}`;
+
+                document.getElementById("spendtogether").textContent = `Spending together ${years} years: ${months} months: ${days} days: ${hours} hours: ${minutes} minutes: ${seconds} seconds`;
+            }
+
+            spendtogether();
+
+            setInterval(spendtogether,1000);
+        })
+
+        $(".mesages").effect("shake",500);
+
+        $(".mydates").flatpickr({
+            enableTime: true,
+            dateFormat: "Y-m-d",
+        });
+    })
+
+
+
+</script>
+
+</body>
+</html>
